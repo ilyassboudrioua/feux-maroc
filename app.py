@@ -22,8 +22,8 @@ ZONES = {
 
 @st.cache_data
 def charger():
-    feux = pd.read_csv("data/feux_maroc_propres.csv", parse_dates=["date"])
-    facteurs = pd.read_csv("data/facteurs_mois.csv", index_col=0).iloc[:, 0]
+    feux = pd.read_csv("feux_maroc_propres.csv", parse_dates=["date"])
+    facteurs = pd.read_csv("facteurs_mois.csv", index_col=0).iloc[:, 0]
     return feux, facteurs
 
 
